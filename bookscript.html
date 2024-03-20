@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button class="book-add">Add Book</button>
+
+   <script>
+let bookAdd = document.querySelector(".book-add");
+bookAdd.addEventListener("click", () =>{
+let book = new Book()
+}
+)
+
+    const myLibrary = []
+
+    function Book(title, author, noOfPages, haveRead){
+        this.title = title;
+        this.author = author;
+        this.noOfPages = noOfPages;
+        this.haveRead = haveRead
+        this.info = function(){
+            return `${title} by ${author}, ${noOfPages} pages, ${haveRead ? "Have read it":"Have not read it"}`;
+        }
+    }
+
+    function addBookToLibrary(){
+
+    }
+
+
+    const book1 = new Book("The Hobbit", "JRR Tolkien", "323", false);
+
+    console.log(book1.info())
+
+   </script> 
+
+
+</body>
+</html>
